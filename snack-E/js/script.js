@@ -30,10 +30,7 @@ const persone = [
       messaggio: "prova",
    },
 ];
-console.table(persone);
 
-persone["messaggio"] = "ciao";
-persone.messaggio = "ciao";
 console.table(persone);
 
 const puoiGuidare = persone.filter((element) => {
