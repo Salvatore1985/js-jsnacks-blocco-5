@@ -33,15 +33,18 @@ const persone = [
 console.table(persone);
 
 persone["messaggio"] = "ciao";
+persone.messaggio = "ciao";
 console.table(persone);
 
 const puoiGuidare = persone.filter((element) => {
    if (element["età"] < 18) {
-      persone.messaggio = "non puoi guidare";
+      element.messaggio = "non puoi guidare";
+
       return element.name + element.cognome + element.messaggio;
    } else {
-      persone.messaggio = "puoi giudare";
+      element.messaggio = "puoi giudare";
       return element.name + element.cognome + element.messaggio;
    }
 });
+
 console.table(puoiGuidare);
