@@ -12,10 +12,12 @@
 const nameList = ['pippo', 'PLUTO', 'Paperino'];
 
 const modifa = nameList.map((element) => {
-    return element.charAt(0).toLocaleUpperCase +
-        element.substring(1).toLocaleLowerCase;
-
+    return element.charAt(0).toLocaleUpperCase() +
+        element.substring(1).toLocaleLowerCase();
 
 });
 
+
 console.log(modifa);
+
+
